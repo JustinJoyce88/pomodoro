@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="centered">
+      <header>Pomodoro</header>
+      <div class="bub1"></div>
+      <div class="bub2"></div>
+      <div class="bub3"></div>
+      <div class="bub4"></div>
+      <div class="bub5"></div>
+      <div class="bub6"></div>
+      <section>
+        <h1 class="session-time">25:00</h1>
+        <div class="break-container">
+          <h4 class="break-time">5:00</h4>
+        </div>
+        <div>
+          <span class="control-titles">Session</span>
+          <span class="control-titles">Break</span>
+        </div>
+        <div class="controls-1">
+          <button id="min-minus" class="btn-ctrls1">-</button>
+          <span class="minutes">25</span>
+          <button id="min-plus" class="btn-ctrls1">+</button>
+          <button id="break-minus" class="btn-ctrls1">-</button>
+          <span class="break-minutes">5</span>
+          <button id="break-plus" class="btn-ctrls1">+</button>
+        </div>
+        <div>
+          <button class="btn-ctrls2" id='start'>Start</button>
+          <button class="btn-ctrls2" id='pause'>Pause</button>
+          <button class="btn-ctrls2" id='reset'>Reset</button>
+        </div>
+      </section>
+      <div class="sig">Design and code by Justin Joyce</div>
+    </div>
+  </div>
+  <audio id="audio">
+    <source src="http://www.freesfx.co.uk/rx2/mp3s/6/17911_1464199838.mp3" type="audio/mpeg">
+  </audio>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="pomodoro.js"></script>
+</body>
+
+</html>

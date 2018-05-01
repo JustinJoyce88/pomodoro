@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  line-height: 150%;
+  background-attachment: fixed;
+  font-family: "Poiret One", cursive;
+  color: white;
+  background: rgba(67, 198, 172, 0.8);
+  background: -webkit-linear-gradient(
+    to top,
+    rgba(25, 22, 84, 0.8),
+    rgba(67, 198, 172, 0.8)
+  );
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(25, 22, 84, 0.8)),
+    to(rgba(67, 198, 172, 0.8))
+  );
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(25, 22, 84, 0.8),
+    rgba(67, 198, 172, 0.8)
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(25, 22, 84, 0.8),
+    rgba(67, 198, 172, 0.8)
+  );
+  background: linear-gradient(
+    to top,
+    rgba(25, 22, 84, 0.8),
+    rgba(67, 198, 172, 0.8)
+  );
+}
+
+header {
+  padding-top: 2.25em;
+  font-size: 2em;
+}
+
+h1 {
+  margin-top: 0.5em;
+  padding: 0.2em;
+  font-size: 3em;
+}
+
+.break-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  margin: 0 auto 0.5em auto;
+  width: 30%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.centered {
+  background-color: #065ea2;
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  border-radius: 500px;
+}
+
+.control-titles {
+  margin: 0 2.5em;
+  font-size: 1.5em;
+}
+
+.controls-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+.btn-ctrls1 {
+  margin: 0 1.5em;
+  border-radius: 500px;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-ctrls2 {
+  margin: 0 1em;
+  border: none;
+  width: 60px;
+  height: 35px;
+}
+
+.sig {
+  margin: 2em;
+  font-size: 1em;
+}
+
+#start {
+  background: #81ecec;
+}
+
+#start:hover {
+  background: #46e3e3;
+}
+
+#pause {
+  background: #fab1a0;
+}
+
+#pause:hover {
+  background: #f78970;
+}
+
+#reset {
+  background: #b7c7cd;
+}
+
+#reset:hover {
+  background: #99afb9;
+}
+
+#min-plus,
+#break-plus,
+#min-minus,
+#break-minus {
+  background: #74b9ff;
+}
+
+#min-plus:hover,
+#break-plus:hover,
+#min-minus:hover,
+#break-minus:hover {
+  background: #419fff;
+}
+
+/* VANITY BUBBLES */
+
+.bub1 {
+  position: fixed;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  background-color: rgba(45, 40, 151, 0.2);
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  left: 50%;
+  border-radius: 500px;
+  z-index: -1;
+}
+
+.bub2 {
+  position: fixed;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  background-color: rgba(33, 29, 111, 0.2);
+  width: 200px;
+  height: 200px;
+  bottom: 25%;
+  right: 55%;
+  border-radius: 500px;
+  z-index: -1;
+}
+
+.bub3 {
+  position: fixed;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  background-color: rgba(41, 36, 138, 0.2);
+  width: 100px;
+  height: 100px;
+  left: 30%;
+  border-radius: 500px;
+  z-index: -1;
+}
+
+.bub4 {
+  position: fixed;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  background-color: rgba(53, 47, 178, 0.2);
+  width: 25px;
+  height: 25px;
+  left: 30%;
+  top: 30%;
+  border-radius: 500px;
+  z-index: -1;
+}
+
+.bub5 {
+  position: fixed;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  background-color: rgba(76, 69, 206, 0.2);
+  width: 10px;
+  height: 10px;
+  top: 25%;
+  left: 35%;
+  border-radius: 500px;
+  z-index: -1;
+}
+
+.bub6 {
+  position: fixed;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  background-color: rgba(13, 11, 44, 0.2);
+  width: 350px;
+  height: 350px;
+  top: 50%;
+  right: 30%;
+  border-radius: 500px;
+  z-index: -1;
+}
