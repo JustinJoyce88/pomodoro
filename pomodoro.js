@@ -1,4 +1,4 @@
-$(function() {
+$(() => {
   let sesMins = parseInt($(".minutes").html());
   let sesSecs = 0;
   let breakMins = parseInt($(".break-minutes").html());
@@ -76,10 +76,10 @@ $(function() {
   });
 
   //COUNTDOWNS
-  function sessionTimer(num, num2) {
+  let sessionTimer = (num, num2) => {
     let mins = num;
     let secs = num2 || 0;
-    countdown = setInterval(function() {
+    countdown = setInterval(() => {
       $(".session-time").html(`${mins}:${("0" + secs).slice(-2)}`);
       if (mins === 0 && secs === 0) {
         $(".session-time").html("0:00");
@@ -93,13 +93,13 @@ $(function() {
       }
       secs--;
     }, 1000);
-  }
+  };
 
-  function breakTimer(num) {
+let breakTimer = (num) => {
     let mins = num;
     let secs = 0;
 
-    let countdown = setInterval(function() {
+    let countdown = setInterval(() => {
       $(".break-time").html(`${mins}:${("0" + secs).slice(-2)}`);
       if (mins === 0 && secs === 0) {
         $(".break-time").html("0:00");
@@ -112,6 +112,6 @@ $(function() {
       }
       secs--;
     }, 1000);
-  }
+  };
   //END DOCUMENT READY
 });
