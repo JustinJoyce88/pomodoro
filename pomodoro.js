@@ -1,3 +1,5 @@
+"use strict";
+
 $(() => {
   let sesMins = parseInt($(".minutes").html());
   let sesSecs = 0;
@@ -76,7 +78,7 @@ $(() => {
   });
 
   //COUNTDOWNS
-  let sessionTimer = (num, num2) => {
+  const sessionTimer = (num, num2) => {
     let mins = num;
     let secs = num2 || 0;
     countdown = setInterval(() => {
@@ -95,7 +97,7 @@ $(() => {
     }, 1000);
   };
 
-let breakTimer = (num) => {
+const breakTimer = (num) => {
     let mins = num;
     let secs = 0;
 
